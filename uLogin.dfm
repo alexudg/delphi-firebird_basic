@@ -1,0 +1,61 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Login'
+  ClientHeight = 173
+  ClientWidth = 243
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object txtUserName: TLabeledEdit
+    Left = 96
+    Top = 32
+    Width = 81
+    Height = 21
+    EditLabel.Width = 36
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Usuario'
+    LabelPosition = lpLeft
+    TabOrder = 0
+  end
+  object txtPass: TLabeledEdit
+    Left = 96
+    Top = 59
+    Width = 81
+    Height = 21
+    EditLabel.Width = 56
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Contrase'#241'a'
+    LabelPosition = lpLeft
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object btnOk: TButton
+    Left = 46
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'Aceptar'
+    Default = True
+    TabOrder = 2
+    OnClick = btnOkClick
+  end
+  object btnCancel: TButton
+    Left = 143
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'Cancelar'
+    TabOrder = 3
+    OnClick = btnCancelClick
+  end
+end
